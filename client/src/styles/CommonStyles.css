@@ -1,0 +1,171 @@
+/* client/src/styles/CommonStyles.css */
+
+/* Ana container */
+.container {
+  width: 90%;
+  max-width: 700px;
+  margin: 2rem auto;
+  background-color: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sayfanın arka planı */
+.page-bg {
+  background-color: #f3f4f6; /* Açık gri */
+  min-height: 100vh;
+  padding: 2rem 0; /* Üst-alt boşluk */
+  /* Arka planın sayfanın tamamını kaplaması için: */
+  /* Görselin tam olarak container'a sığması için: */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* İsteğe bağlı ek stiller: */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  /* ... veya sayfa tasarımınıza göre farklı düzenler */
+}
+
+/* Başlıklar */
+.section-title {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #111;
+}
+
+/* Form */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="date"] {
+  height: 2rem;
+  padding: 0.4rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  width: 200px; /* Dikey orantı kazandırmak için sabit genişlik */
+}
+
+/* Daha kısa buton stili */
+.small-btn,
+.submit-btn,
+.delete-btn {
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  margin-right: 0.5rem;
+}
+
+.small-btn:hover,
+.submit-btn:hover,
+.delete-btn:hover {
+  background-color: #1e40af;
+}
+
+/* Liste görünümü */
+.item-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.item-list li {
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.small-btn {
+  background-color: #0ea5e9; /* açık mavi */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.4rem 0.7rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.small-btn:hover {
+  background-color: #0284c7; /* daha koyu mavi */
+}
+
+.submit-btn {
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease-in-out;
+  margin-right: 0.5rem;
+}
+.submit-btn:hover {
+  background-color: #1e40af;
+}
+
+/* .delete-btn - Kırmızı buton (Cancel ya da Delete) */
+.delete-btn {
+  background-color: #dc2626;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease-in-out;
+}
+.delete-btn:hover {
+  background-color: #b91c1c;
+}
+
+/* .form-group - Etiket ve input için küçük düzen */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.75rem;
+}
+.form-group label {
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+.form-group input {
+  height: 2rem;
+  padding: 0.4rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.hoverUnderline:hover {
+  text-decoration: underline;
+}
+
+.addSomething {
+  margin-top: 50px;
+}

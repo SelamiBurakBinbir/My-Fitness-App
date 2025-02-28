@@ -1,0 +1,132 @@
+/* client/src/App.css */
+
+/* Basit bir reset / normalizasyon */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body temel stil */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f3f4f6; /* Tailwind'den esinlenme gri arka plan */
+  color: #333;
+}
+
+/* Bir container klası */
+.container {
+  width: 95%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Başlıklar */
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  color: #111;
+}
+
+/* Form genel stili */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+form label {
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="number"],
+form input[type="date"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+form button {
+  background-color: #2563eb; /* Mavi */
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+form button:hover {
+  background-color: #1e40af; /* Daha koyu mavi */
+}
+
+/* Liste içi biraz boşluk */
+ul {
+  list-style: none;
+  margin-top: 1rem;
+  padding: 0;
+}
+li {
+  background-color: #fff;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+}
+
+/* Tablo */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+}
+table thead {
+  background-color: #2563eb;
+  color: #fff;
+}
+table th,
+table td {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+}
+table th {
+  text-align: left;
+}
+
+/* Hata mesajı */
+.error-message {
+  color: #dc2626; /* Kırmızı */
+  margin-top: 1rem;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #2563eb;
+  padding: 1rem;
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 1rem;
+  font-weight: 500;
+}
+.navbar a:hover {
+  text-decoration: underline;
+}
+.navbar button {
+  background-color: #1e40af;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.navbar button:hover {
+  background-color: #1e3a8a;
+}

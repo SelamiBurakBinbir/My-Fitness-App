@@ -1,0 +1,32 @@
+/************************************************************
+ * client/src/pages/MealPlans.css
+ ************************************************************/
+
+/* Liste öğeleri + hover */
+.item-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  padding: 0.75rem;
+  transition: background-color 0.2s ease;
+}
+
+/* Kaydet butonu solda, küçük */
+.small-save {
+  padding: 0.4rem 0.7rem;
+  font-size: 0.85rem;
+  margin-right: 0.5rem;
+}
+
+/* Form-group, vs. mevcuttan farkı yok, isterseniz ekleyebilirsiniz. */
+
+.button-row {
+  display: flex; /* bir satır */
+  justify-content: flex-start; /* solda hizala */
+  align-items: center;
+  gap: 0.5rem;
+}

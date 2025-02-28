@@ -1,0 +1,55 @@
+/************************************************************
+ * client/src/pages/Habits.css
+ ************************************************************/
+
+/* Sadece Habits sayfası container'ına bir sınıf eklemek isterseniz:
+   .habits-page .item-list li:hover { ... } 
+   Fakat basitçe item-list li:hover da olabilir, 
+   zira bu CSS sadece Habits'te import ediliyor. */
+
+/* Liste görünümleri */
+.item-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  padding: 0.75rem;
+  transition: background-color 0.2s ease;
+}
+
+/* Hover sadece Habits'te */
+.item-list li:hover {
+  background-color: #f3f4f6; /* Bir ton daha açık */
+  cursor: pointer;
+}
+
+/* Soldaki ve sağdaki buton alanları */
+.list-item-left {
+  flex: 1;
+  cursor: pointer;
+}
+.list-item-right {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Checkbox satırı */
+.checkbox-row {
+  display: flex;
+  align-items: center;
+}
+
+/* Butonları solda hizalamak için bir satır */
+.button-row {
+  margin-top: 0.75rem;
+}
+
+/* Ek küçük buton stili (isterseniz) */
+.small-save {
+  padding: 0.4rem 0.7rem;
+  font-size: 0.85rem;
+  margin-right: 0.5rem;
+}
