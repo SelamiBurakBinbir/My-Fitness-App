@@ -4,7 +4,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: process.env.REACT_APP_API_BASE_URL || "http://localhost:5000/api", // Ortam değişkeni varsa kullan, yoksa localhost:5000/api kullan
+  baseURL: "http://localhost:5000/api",
 });
 
 // İstek öncesi token ekleme (eğer localStorage'da token varsa)
