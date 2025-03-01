@@ -9,6 +9,7 @@ const pool = new Pool({
   database: process.env.PGDATABASE || "fitnessdb",
   password: process.env.PGPASSWORD || "1001",
   port: process.env.PGPORT || 5432,
+  connectionString: process.env.DATABASE_URL || "",
   ssl: {
     rejectUnauthorized: false,
   },
