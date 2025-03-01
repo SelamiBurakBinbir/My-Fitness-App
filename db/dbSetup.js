@@ -4,11 +4,14 @@
 const { Pool } = require("pg");
 
 const pool = new Pool({
-  user: "postgres",
-  host: "localhost",
-  database: "fitnessdb",
-  password: "1001",
-  port: 5432,
+  user: process.env.PGUSER || "postgres",
+  host: process.env.PGHOST || "localhost",
+  database: process.env.PGDATABASE || "fitnessdb",
+  password: process.env.PGPASSWORD || "1001",
+  port: process.env.PGPORT || 5432,
+  ssl: {
+    rejectUnauthorized: false,
+  },
 });
 
 async function createTables() {
