@@ -1,42 +1,14 @@
 /************************************************************
  * dbSetup.js
  ************************************************************/
-const { Pool, Client } = require("pg");
-
-// Veritabanının varlığını kontrol edip oluşturacak fonksiyon
-async function ensureDatabaseExists() {
-  // Veritabanı oluşturma işlemi için bağlantı, fitnessdb veritabanı kullanılmadan
-  const client = new Client({
-    user: process.env.PGUSER || "postgres",
-    host: process.env.PGHOST || "localhost",
-    password: process.env.PGPASSWORD || "1001",
-    port: process.env.PGPORT || 5432,
-  });
-
-  try {
-    await client.connect();
-    const res = await client.query(
-      "SELECT 1 FROM pg_database WHERE datname = 'fitnessdb'"
-    );
-    if (res.rowCount === 0) {
-      await client.query("CREATE DATABASE fitnessdb");
-      console.log("Veritabanı 'fitnessdb' oluşturuldu.");
-    } else {
-      console.log("Veritabanı 'fitnessdb' zaten mevcut.");
-    }
-  } catch (error) {
-    console.error("Veritabanı oluşturulurken hata meydana geldi:", error);
-  } finally {
-    await client.end();
-  }
-}
+const { Pool } = require("pg");
 
 const pool = new Pool({
-  user: process.env.PGUSER || "postgres",
-  host: process.env.PGHOST || "localhost",
-  database: process.env.PGDATABASE || "fitnessdb",
-  password: process.env.PGPASSWORD || "1001",
-  port: process.env.PGPORT || 5432,
+  user: process.env.PGUSER,
+  host: process.env.PGHOST,
+  database: process.env.PGDATABASE,
+  password: process.env.PGPASSWORD,
+  port: process.env.PGPORT,
   connectionString: process.env.DATABASE_URL,
   ssl: {
     rejectUnauthorized: false,
@@ -267,6 +239,4 @@ async function createTables() {
   }
 }
 
-ensureDatabaseExists().then(() => {
-  createTables();
-});
+createTables();

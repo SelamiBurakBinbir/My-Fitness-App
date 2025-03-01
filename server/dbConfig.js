@@ -8,7 +8,7 @@ const { Pool } = require("pg");
 const pool = new Pool({
   user: "postgres",
   host: "localhost",
-  database: "fitnessdb", // Bir önceki prompt’ta kullandığımız DB adı
+  database: "fitnessdb",
   password: "1001",
   port: 5432,
 });
