@@ -1,8 +1,16 @@
-# You can try My Fitness App on Vercel!
+# You can try [My Fitness App](https://my-fitness-app-eight.vercel.app/) on Vercel!
+*Important Note: The server is running on [Render.com](https://render.com/), which means there may be an initial delay of one minute or more.*
 
-Welcome to My Fitness App, a comprehensive digital tool designed to help users achieve their health and fitness goals. This desktop-based application seamlessly integrates exercise, nutrition, and habit tracking into a single, intuitive platform—empowering you to create personalized workout routines, monitor your progress, and maintain a healthy lifestyle.
+To run it locally, follow these steps:  
+1- Run dbSetup.js located in the db folder to set up the database.  
+2- Install dependencies by running npm install for both the server and client.  
+3- Start both the server and client by running npm start.
 
-### Technologies Used
+***
+
+Welcome to My Fitness App, a comprehensive digital tool designed to help users achieve their health and fitness goals. This **full stack**, desktop-based application seamlessly integrates exercise, nutrition, and habit tracking into a single, intuitive platform — empowering you to create personalized workout routines, monitor your progress, and maintain a healthy lifestyle.
+
+### Technologies Used:  
 PERN Stack (PostgreSQL, Express, React, Node.js)
 
 ***
