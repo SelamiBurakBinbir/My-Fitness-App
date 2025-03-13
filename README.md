@@ -1,4 +1,4 @@
-# You can try [My Fitness App](https://my-fitness-app-eight.vercel.app/) on Vercel!
+# You can try [My Fitness App](https://my-fitness-app-selamiburakbinbirs-projects.vercel.app/) on Vercel!
 *Important Note: The server is running on [Render.com](https://render.com/), which means there may be an initial delay of one minute or more.*
 
 To run it locally, follow these steps:  
